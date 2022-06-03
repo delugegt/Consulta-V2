@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+
+    <title>Home</title>
+
+</head>
+<body>
+    <div class="wrap-div">
+        <h1>Bem vindo</h1>
+        <!-- <input type="text" id="search"> -->
+
+        <div class="cabecalho">
+            <a href="./alt/blogs.html" target="_blank"><img class="wrap-img" src="./imgs/blogs.png" alt=""></a>
+            <a href="./alt/buscadores.html" target="_blank"><img class="wrap-img" src="./imgs/buscadores.png" alt=""></a>
+            <a href="./alt/fontes-oficiais.html" target="_blank"><img class="wrap-img" src="./imgs/fontes oficiais.png" alt=""></a>
+            <a href="./alt/livros.html" target="_blank"><img  class="wrap-img" src="./imgs/livros.png" alt=""></a>
+            <a href="./alt/videos.html" target="_blank"><img  class="wrap-img" src="./imgs/videos.png" alt=""></a>
+        </div>
+        <div class="contexto">
+            <div class="tabela">
+                <table>
+                    <tr>
+                        <th>OSI</th>
+                        <th>TCP/IP</th>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3">Application</td>
+
+                        <tr>
+                            <tr>
+                                <td>
+                                Aplication  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Presentation
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Session
+                                </td>
+                            </tr>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                        Transport
+                        </td>
+                        <td>
+                            Transport
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Network
+                        </td>
+                        <td>
+                            internet
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Network Interface</td>
+                        <tr>
+                            <td>
+                                Data Link
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            Physical
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div> <img src="./imgs/SYNACK.png" width="350px"></div>
+            
+            <div class="scroll">
+<p>                
+<p>
+    <h4>Gerenciamento de Processos no LINUX</h4>            
+                    Você pode enviar sinais que encerram processos; existem uma variedade de tipos de sinais que se correlacionam exatamente como processo é tratado pelo kernel. 
+                    <h4>
+                    Como iniciar os processos? </h4>
+                    Vamos começar falando sobre namespaces. O Sistema Operacional (OS) usa namespaces para dividir os recursos disponíveis no computador para processos (como CPU, RAM e prioridade). O processo com um ID de 0 é um processo que é iniciado quando o sistema inicial.                    
+                    <h4>Obtendo processos/serviços para iniciar no boot</h4>
+                    Algumas aplicações podem ser iniciadas no boot do sistema que possuímos. Dizer ao servidor web apache para iniciar apache manualmente e, em seguida, dizendo ao sistema para lançar apache2 no boot. 
+</p>
+<p>
+<h4>Comandos Importantes:</h4>
+<p>
+ps - Podemos usar o comando ps para fornecer uma lista dos processos em execução como sessão do nosso usuário e algumas informações adicionais, como: código de status; sessão que está executando-o; quanto tempo de uso da CPU está usando; nome do programa ou comando real que está sendo executado; 
+<p>
+ps aux - Para ver os processos executados por outros usuários e aqueles que não funcionam a partir de uma sessão (ou seja, processos de sistema): Fornecer aux ao comando os. para podermos ver "root" e "cmnatic"</p>
+</p>
+<p>
+top - fornece estatísticas em tempo real sobre os processos em execução em seu sistema em vez de uma visualização única. Essas estatísticas se atualizarão a cada 10 segundos.</p>
+<p>
+ 
+</p>
+<p>
+Kill - Para finalizar um comando, podemos usar o comando de kill apropriadamente nomeado e o PID associado. Ou seja, para matar pid 1337, usaríamos kill 1337.
+Sinais que podemos enviar para um processo quando ele é morto:
+<p><ul>
+    <li>SIGTERM - Mate o processo, mas permita que ele faça algumas tarefas de limpeza de antemão</li>
+    <li>SIGKILL - Mate o processo - não faz nenhuma limpeza após o fato</li>
+    <li>SIGSTOP - Pare/suspenda um processo</li>
+</ul></p>
+</p>
+systemctl - este comando nos permite interagir com o processo/daemon sistemd. 
+Continuando com nosso exemplo, o systemctl é um comando fácil de usar que leva a seguinte formatação: systemctl [opção] [serviço]. Para dizer ao apache para iniciar, vamos usar systemctl start apache2. 
+Podemos fazer quatro opções com systemctl:
+<p><ul>
+    <li>Start</li>
+    <li>Stop</li>
+    <li>Enable</li>
+    <li>Disable</li>
+</ul></p>            
+</p>
+</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
